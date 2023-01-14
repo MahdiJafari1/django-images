@@ -2,12 +2,7 @@
 
 set -o errexit  # exit on error
 
-pip install pipenv
-
-pipenv shell
-
-pipenv install
+pip install -r requirements.txt
 
 python manage.py collectstatic --no-input
-
 python manage.py migrate
