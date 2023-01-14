@@ -86,7 +86,6 @@ DATABASES = {
         "ENGINE": dj_database_url.parse(
             os.environ.get("DATABASE_URL"), conn_max_age=600
         ),
-        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
@@ -150,4 +149,4 @@ MEDIA_ROOT = BASE_DIR / "mediafiles"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
