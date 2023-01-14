@@ -83,7 +83,6 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 # Just after the default DATABASE configuration add this in settings.py
 
-POSTGRES_DB =
 
 DATABASES = {
     'default': {
